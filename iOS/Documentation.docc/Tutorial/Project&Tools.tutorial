@@ -14,7 +14,7 @@
             
             Step-by-step guide to downloading the sample project from GitHub:
 
-            Open Github using this [Link](https://github.com/Emadgnia/StarCharles)
+            Open Github using this [Link](https://github.com/Emadgnia/StarProxy)
             @Image(source: qr-code-1, alt: "qr-code-1")
         }
         
@@ -22,7 +22,7 @@
             @Step {
                 Visit the GitHub repository containing the sample project. The URL might look something like this:
                 
-                `https://github.com/Emadgnia/StarCharles`
+                `https://github.com/Emadgnia/StarProxy`
                 @Image(source: github, alt: "github.png")
             }
             
@@ -32,7 +32,6 @@
                 Click on this button to reveal a dropdown menu with several download options.
                 
                 @Image(source: github-1.png, alt: "github-1.png")
-<!--                @Code(name: "<#display name#>", file: <#filename.swift#>)-->
             }
             @Step {
                 You can either clone the repository using a Git client or download the project as a ZIP file:
@@ -46,7 +45,7 @@
             @Step {
                  To clone the repository, copy the URL provided in the "Clone" section of the dropdown menu like this:
                  
-                 https://github.com/Emadgnia/StarCharles 
+                 https://github.com/Emadgnia/StarProxy 
                  
                  @Image(source: github-1.png, alt: "github-1.png")
 
@@ -55,7 +54,7 @@
             @Step {
                  Then, open Terminal on your Mac and run the following command, replacing URL with the copied URL:
                  
-                 `$ git clone https://github.com/Emadgnia/StarCharles`
+                 `$ git clone https://github.com/Emadgnia/StarProxy`
                  
                  @Image(source: github-2.png, alt: "github-2.png")
 
@@ -70,12 +69,19 @@
             }
             
             @Step {
-                After you've cloned the repository or extracted the ZIP file, navigate to the project folder and open the .xcodeproj file with Xcode to get started with the tutorial.
+                Navigate to the iOS folder **Or skip this step and open Android folder in next step** and open the .xcodeproj file with Xcode to get started with the tutorial. 
                 
-                Now you have the sample project from GitHub, and you can proceed with the next steps in the Tutorial.
+                Now you have the sample project from GitHub, and you can proceed with the next **Section** in the Tutorial.
                 
-                @Image(source: project.png, alt: "project.png")
-
+                @Image(source: iOS.png, alt: "iOS.png")
+                
+            }
+            @Step {
+                Navigate to the Android folder and Open it in Android studio to get started with the tutorial.
+                
+                Now you have the sample project from GitHub, and you can proceed with the next **Section** in the Tutorial.
+                
+                @Image(source: Android.png, alt: "Android.png")
                 
             }
         }
@@ -83,41 +89,67 @@
     
     @Section(title: "Tools") {
         @ContentAndMedia {
-            In the secodn section of the Network Debugging Tutorial, you will download the Proxyman or Charles which is a tool for this tutorial.
+            In the secodn section of the Network Debugging Tutorial, you will download the Proxyman **OR** Charles which is a tool for this tutorial.
         }
         
         @Steps {
             @Step {
-                Open **Proxyman** using this [Link](https://proxyman.io)
-                
+                Download and Open **Proxyman** using this [Link](https://proxyman.io)
+                Or navigate to next step
                 @Image(source: proxyman.png, alt: "proxyman.png")
             }
             
             @Step {
-                Open **Charles** using this [Link](https://proxyman.io)
+                Download and Open **Charles** using this [Link](https://www.charlesproxy.com/download/)
                 
                 @Image(source: charles.png, alt: "charles.png")
             }
-            @Step {
-                Install Certificates on your **Mac** or go next step:
-                [Proxyman -> Link](https://docs.proxyman.io/debug-devices/macos) or
-                [Charles -> Link](https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/)
-            }
+            
+            Now it depends on your usage, you should decide to **Install Certificates** on iOS or Android
+            
             @Step {
                 Install Certificates on your **iOS** or go next step:
                 [Proxyman -> Link](https://docs.proxyman.io/debug-devices/ios-device) or
                 [Charles -> Link](https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/)
+                @Image(source: proxyConfiguration.png, alt: "proxyConfiguration.png")
+
             }
             @Step {
                 Install Certificates on your **Simulator** or go next step:
                 [Proxyman -> Link](https://docs.proxyman.io/debug-devices/ios-simulator) or
                 [Charles -> Link](https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/)
+                @Image(source: proxyConfiguration.png, alt: "proxyConfiguration.png")
+
             }
             @Step {
                 Install Certificates on your **Android or Emulator** or go next step:
                 [Proxyman -> Link](https://docs.proxyman.io/debug-devices/android-device) or
                 [Charles -> Link](https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/)
+                @Image(source: proxyConfiguration.png, alt: "proxyConfiguration.png")
+
             }
+            
+            If you installed the Certificates currectly, you should see something like this on **Proxyman**:
+            
+            @Step {
+                Open prject and try to inspect the StarCharles app using **Proxyman**
+                @Image(source: Proxyman-1, alt: "proxyman.png")
+            }
+            @Step {
+                Using **Proxyman** Try to Enable SSL Proxying on Swapi.dev domain.
+                @Image(source: proxyman-sslproxying, alt: "proxyman-sslproxying.png")
+            }
+            If you installed the Certificates currectly, you should see something like this on **Charles**:
+            @Step {
+                Open prject and try to inspect the StarCharles app using **Charles**
+                @Image(source: Charles-1, alt: "Charles.png")
+            }
+
+            @Step {
+                Using **Chales** Try to Enable SSL Proxying on Swapi.dev domain by **Right click** on it.
+                @Image(source: charles-sslproxying, alt: "charles-sslproxying.png")
+            }
+            
         }
     }
 }
