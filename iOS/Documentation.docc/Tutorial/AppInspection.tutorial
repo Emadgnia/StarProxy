@@ -1,0 +1,39 @@
+@Tutorial(time: 15) {
+    @Intro(title: "App Inspection") {
+        Welcome to the App Inspection tutorial! In this brief yet informative guide, you'll learn how to track all network traffic on your device and inspect the details of requests and responses going through www.swapi.dev. Get ready to enhance your network debugging capabilities by mastering the art of app inspection with powerful tools like Proxyman and Charles.
+        @Image(source: AppInspection-0, alt: "AppInspection-0")
+        }
+    
+    @Section(title: "Track Swapi.Dev") {
+        @ContentAndMedia {
+            Now we want to see all the details for any traffics that goes through www.swapi.dev
+            }
+        
+        @Steps {
+            If you installed the Certificates currectly, you should see something like this on **Proxyman**:
+            
+            @Step {
+                Open prject and try to inspect the StarCharles app using **Proxyman**
+                @Image(source: Proxyman-1, alt: "proxyman.png")
+            }
+            @Step {
+                Using **Proxyman** Try to Enable SSL Proxying on Swapi.dev domain.
+                [Helper -> Link](https://docs.proxyman.io/basic-features/ssl-proxying)
+
+                @Image(source: proxyman-sslproxying, alt: "proxyman-sslproxying.png")
+            }
+            If you installed the Certificates currectly, you should see something like this on **Charles**:
+            @Step {
+                Open prject and try to inspect the StarCharles app using **Charles**
+                @Image(source: Charles-1, alt: "Charles.png")
+            }
+
+            @Step {
+                Using **Chales** Try to Enable SSL Proxying on Swapi.dev domain by **Right click** on it.
+                [Helper -> Link](https://www.charlesproxy.com/documentation/proxying/ssl-proxying/)
+
+                @Image(source: charles-sslproxying, alt: "charles-sslproxying.png")
+            }
+        }
+    }
+}

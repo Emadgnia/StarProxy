@@ -1,0 +1,87 @@
+@Tutorial(time: 45) {
+    @Intro(title: "Basic Proxying") {
+        Welcome to the Basic Proxying tutorial! In this comprehensive guide, you'll learn how to inspect your app in greater detail and effectively collaborate with back-end developers by sending cURL requests and responses. You'll also discover how to map network traffic, use breakpoints to manipulate data on-the-fly, and leverage the Repeat tool to resend requests without client involvement. Prepare to dive deep into the world of network debugging and enhance your skills in proxying and app inspection.
+        @Image(source: BasicInspection-0, alt: "BasicInspection-0")
+    }
+    
+    @Section(title: "First step") {
+        @ContentAndMedia {
+            To best help back-end developers exactly understand what happened, send either the whole session or the **cURL** request and the corresponding response.
+        }
+        
+        @Steps {
+            @Step {
+                Try to use **Copy As** to get a cURL for any request you've got/
+                @Image(source: BasicInspection-1, alt: "BasicInspection-1")
+            }
+            
+            @Step {
+                Try to use CURL in terminal to see if you get the same result back in terminal
+                @Image(source: BasicInspection-2, alt: "BasicInspection-2")
+            }
+        }
+    }
+    @Section(title: "Second step") {
+        @ContentAndMedia {
+            Try to see if you could map all the traffics to be forwarded from **www.swapi.dev** to **Emad's laptop's IP** or any remote URLs/IPs.
+        }
+        
+        @Steps {
+            @Step {
+                Use Map Remote functionality to map everythings to go through to differnt url
+                @Image(source: BasicInspection-3, alt: "BasicInspection-3")
+            }
+            
+            @Step {
+                See if everythings went well and you still get the same results in your apps and you app still working as before.
+                @Image(source: BasicInspection-3, alt: "BasicInspection-4")
+            }
+        }
+    }
+    @Section(title: "Third step") {
+        @ContentAndMedia {
+            Trying to fix a back-end issue? By using **Breakpoints** and manipulating the data on the air, you can simulate any states that might come from your back-end server.
+            @Image(source: BasicInspection-5, alt: "BasicInspection-5")
+
+        }
+        
+        @Steps {
+            @Step {
+                Use **Breakpoint** feature and try to change the *response* and get different data in app 
+                @Image(source: BasicInspection-6, alt: "BasicInspection-6")
+
+            }
+            
+            @Step {
+                Try to change a name of one film to something else like this.
+                @Image(source: BasicInspection-7, alt: "BasicInspection-7")
+
+            }
+            > Warning: Try to **not break** the app by modifying the data type, or do it for fun :-)
+
+            
+            @Step {
+                Use **Breakpoint** feature and try to change the **request** and get different data in app.
+                @Image(source: BasicInspection-8, alt: "BasicInspection-8")
+            }
+            > Tip: You could try to change the api, and get the **planets** instead of **people** instead to see what would happen.
+
+        }
+    }
+    @Section(title: "Last step") {
+        @ContentAndMedia {
+            When you test back-end code, you might want to examine the server’s response without involving your client. The **Repeat tool** makes this easy. Enable it by right-clicking on any request, then choosing Repeat.
+        }
+        
+        @Steps {
+            @Step {
+                In this scenario, Proxy app resends the exact same request to the server and shows you the response as a new request without taking any action on your client. This happens only once by default.
+                Keep the Repeat tool in mind when it’s difficult to navigate to the location where a request gets sent in the client interface. Once you have one example request, use Repeat to send it again.
+                @Image(source: BasicInspection-9, alt: "BasicInspection-9")
+
+            }
+            > Warning: Now try to disable the **Breakpoints** to avoid distration.
+
+        }
+    }
+}

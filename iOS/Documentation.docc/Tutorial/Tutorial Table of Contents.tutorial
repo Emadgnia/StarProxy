@@ -18,8 +18,9 @@
         @Image(source: Banner.png, alt: "Banner")
     }
     
+    
+    
     @Chapter(name: "Project & Tools") {
-
         Welcome to the Ultimate Network Debugging Tutorial! 
         In this tutorial, you will learn various techniques to debug network-related issues in your app.
         Before we start, you need to download the sample project from GitHub.
@@ -27,5 +28,29 @@
         @Image(source: app.badge, alt: "Project & Tools")
         
         @TutorialReference(tutorial: "doc:Project&Tools")
+
+    }
+    @Chapter(name: "Fundamentals") {
+        
+        In this chapter, you will learn the essential concepts and techniques required to address network-related issues effectively.
+        Get ready to dive deep into the basics of network debugging and make your app development process smoother.
+        
+        @Image(source: magnifyingglass, alt: "Fundamentals")
+
+        @TutorialReference(tutorial: "doc:AppInspection")
+        
+        @TutorialReference(tutorial: "doc:BasicInspection")
+        
+
+    }
+    @Chapter(name: "Expert Techniques") {
+        
+        In this chapter, you will explore advanced strategies and methods that will help you tackle even the most complex network issues in your app.
+        Enhance your skills and become a true network debugging expert.
+        
+        @Image(source: aqi.medium, alt: "Expert Techniques")
+
+        @TutorialReference(tutorial: "doc:AdvancedUsage")
+
     }
 }

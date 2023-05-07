@@ -35,7 +35,7 @@ import Foundation
 struct Character: Identifiable {
   var id = UUID()
   let name: String
-  let height: String
+  let height: String?
   let mass: String?
   let hairColor: String?
   let skinColor: String?

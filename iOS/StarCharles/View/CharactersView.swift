@@ -69,7 +69,7 @@ struct CharactersListItemView: View {
         .font(.subheadline)
       Text("Hair Color: \(character.hairColor ?? "N/A")")
         .font(.subheadline)
-      Text("Height: \(character.height)")
+      Text("Height: \(character.height ?? "N/A")")
         .font(.subheadline)
     }.padding()
   }

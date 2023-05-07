@@ -5,7 +5,7 @@ import java.util.*
 data class Character(
     val id: UUID = UUID.randomUUID(),
     val name: String,
-    val height: String,
+    val height: String?,
     val mass: String?,
     val hairColor: String?,
     val skinColor: String?,

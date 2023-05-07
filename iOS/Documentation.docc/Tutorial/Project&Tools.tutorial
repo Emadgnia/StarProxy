@@ -1,8 +1,8 @@
-@Tutorial(time: 25) {
+@Tutorial(time: 30) {
     @Intro(title: "Project & Tools") {
-        Welcome to the Ultimate Network Debugging Tutorial! In this tutorial, you will learn various techniques to debug network-related issues in your app.
-        
-        Before we start, you need to download the sample project from GitHub.
+        Welcome to the Ultimate Network Debugging Tutorial! In this tutorial, you'll learn a variety of techniques to debug network-related issues in your app. To get started, you'll first download a sample project from GitHub that will serve as a practical example for applying the concepts covered in this tutorial.
+
+        Once you have the sample project, you'll download either Proxyman or Charles, powerful tools for network debugging. After installing the necessary certificates on your iOS or Android device, you'll be well-prepared to dive into the world of network debugging and enhance your skills in identifying and resolving network-related issues in your app.
         @Image(source: section1, alt: "Project & Tools")
     }
     
@@ -128,28 +128,6 @@
                 @Image(source: proxyConfiguration.png, alt: "proxyConfiguration.png")
 
             }
-            
-            If you installed the Certificates currectly, you should see something like this on **Proxyman**:
-            
-            @Step {
-                Open prject and try to inspect the StarCharles app using **Proxyman**
-                @Image(source: Proxyman-1, alt: "proxyman.png")
-            }
-            @Step {
-                Using **Proxyman** Try to Enable SSL Proxying on Swapi.dev domain.
-                @Image(source: proxyman-sslproxying, alt: "proxyman-sslproxying.png")
-            }
-            If you installed the Certificates currectly, you should see something like this on **Charles**:
-            @Step {
-                Open prject and try to inspect the StarCharles app using **Charles**
-                @Image(source: Charles-1, alt: "Charles.png")
-            }
-
-            @Step {
-                Using **Chales** Try to Enable SSL Proxying on Swapi.dev domain by **Right click** on it.
-                @Image(source: charles-sslproxying, alt: "charles-sslproxying.png")
-            }
-            
         }
     }
 }

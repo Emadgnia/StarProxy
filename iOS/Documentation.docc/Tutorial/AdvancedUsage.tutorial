@@ -1,0 +1,112 @@
+@Tutorial(time: 75) {
+    @Intro(title: "Advanced Usage") {
+        Welcome to the Advanced Usage tutorial, where you'll learn how to master this powerful tool to take your network debugging skills to the next level! In this comprehensive guide, you'll discover how to save, import, and export requests and responses, map local responses, simulate various network conditions, manage block/allow lists, and explore extra features exclusive to certain network debugging tools. Get ready to become a network debugging expert and make your app development process even more efficient.
+        
+        @Image(source: AdvancedUsage-0, alt: "AdvancedUsage-0")
+        }
+        
+    @Section(title: "Save, Import & Export") {
+        @ContentAndMedia {
+            In this section you learn how to save any request or responses, Import/Export settings 
+        }
+        
+        @Steps {
+            @Step {
+                Try to Export all the breakpoint rules you have.
+                @Image(source: AdvancedUsage-1, alt: "AdvancedUsage-1")
+
+            }
+            
+            @Step {
+                See how the import feature work!
+                > Experiment: Try to see if you could import any Charles setting into the Proxyman.
+                @Image(source: AdvancedUsage-2, alt: "AdvancedUsage-2")
+
+            }
+            
+            @Step {
+                Save response bodies from 'api/people' and 'api/films' as Json, we need them in the next section.
+                @Image(source: AdvancedUsage-3, alt: "AdvancedUsage-3")
+
+            }
+        }
+    }
+    @Section(title: "Map Local") {
+        @ContentAndMedia {
+            Get rid of any backend env for your project and map all the responses to your local **JSONs**
+        }
+        
+        @Steps {
+            @Step {
+                Use **Map Local** feature and try to map responses from 'api/people' and 'api/films' to the local json files.
+                @Image(source: AdvancedUsage-4, alt: "AdvancedUsage-4")
+
+            }
+        }
+    }
+            
+    @Section(title: "Network Condition") {
+        @ContentAndMedia {
+            Have you ever wanted to test your app in different network connection situations?
+            Let's try it together.
+        }
+        
+        @Steps {
+            @Step {
+                Try to apply a network condition to one of the APIs and see how it works.
+                @Image(source: AdvancedUsage-5, alt: "AdvancedUsage-5")
+
+            }
+            > Tip: You could try 100% loss network to see if you were handled this error type in your project or you are lucky that you app still is not crashing.
+
+        }
+    }
+        
+    @Section(title: "Block/Allow List") {
+        @ContentAndMedia {
+            Let's have fun, if you want to block all the traffics from your phone, now it's the time.
+            Or you can only allow some URLs and ignore the rest ;-).
+        }
+        
+        @Steps {
+            @Step {
+                Try to block 'swapi.dev' and make sure you are either pointing at a local server or your local files.
+                @Image(source: AdvancedUsage-6, alt: "AdvancedUsage-6")
+
+            }
+            > Warning: If you made an Allow list, you would not be able to do call anything else than those list. 
+        }
+    }  
+    
+    @Section(title: "Extra Tools") {
+        @ContentAndMedia {
+            If you have time you can check out the following tools to get your hands dirty.
+        }
+        
+        @Steps {
+            > Experiment: Proxyman Only featurs:
+            @Step {
+                Try to work with **Scripting** feature and see how far you could go with.
+                [Proxyman Doc](https://docs.proxyman.io/scripting/script)
+                @Image(source: AdvancedUsage-7, alt: "AdvancedUsage-7")
+
+            }
+            > Experiment: Charles Only featurs:
+            @Step {
+                Try to work with **Rewrite** feature and see how far you could go with.
+                [Charles Doc](https://www.charlesproxy.com/documentation/tools/rewrite/) and [Kodeco Doc](https://www.kodeco.com/22070831-advanced-charles-proxy-tutorial-for-ios#toc-anchor-011)
+                @Image(source: AdvancedUsage-8, alt: "AdvancedUsage-8")
+
+            }
+            > Note: Next step is trying to make Charles Feature working on Proxyman:
+            @Step {
+                Try to work with **Mirro** feature using **Charles** and see how far you could go with and try to do similar thing in **Proxyman** using **Scripting**.
+                [Charles Doc](https://www.charlesproxy.com/documentation/tools/mirror/) and [Kodeco Doc](https://www.kodeco.com/22070831-advanced-charles-proxy-tutorial-for-ios#toc-anchor-015)
+                @Image(source: AdvancedUsage-9, alt: "AdvancedUsage-9")
+
+            }
+        }
+    }
+    
+    
+}

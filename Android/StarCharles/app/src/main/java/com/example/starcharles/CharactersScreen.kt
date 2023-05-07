@@ -50,7 +50,7 @@ fun CharactersScreen(viewModel: MainViewModel, navController: NavController, url
                     Text(character.name, style = MaterialTheme.typography.h6)
                     Text("Gender: ${character.gender ?: "N/A"}", style = MaterialTheme.typography.subtitle1)
                     Text("Hair Color: ${character.hairColor ?: "N/A"}", style = MaterialTheme.typography.subtitle1)
-                    Text("Height: ${character.height}", style = MaterialTheme.typography.subtitle1)
+                    Text("Height: ${character.height ?: "N/A"}", style = MaterialTheme.typography.subtitle1)
                 }
             }
         }
