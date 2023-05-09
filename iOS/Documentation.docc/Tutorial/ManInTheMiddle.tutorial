@@ -1,0 +1,57 @@
+@Tutorial(time: 30) {
+    @Intro(title: "Man In The Middle Attach") {
+        
+        Welcome to the Man In The Middle Attack tutorial! In this tutorial, you'll learn about the importance of using SSL Pinning to avoid man-in-the-middle (MITM) attacks and protect your app's communication.
+
+        You'll begin by finding the hashed public key for the swapi.dev domain using the SSL Labs website. Then, depending on whether you are using iOS or Android, you'll follow the appropriate steps to implement SSL Pinning in your app's configuration.
+
+        By doing this, you can ensure that your app's communication is secure and resilient against potential MITM attacks. Just remember to revert the changes when you quit Proxyman or Charles to ensure your emulators continue to work normally.
+        
+        @Image(source: ManInTheMiddle-0, alt: "ManInTheMiddle-0")
+    }
+    
+    @Section(title: "Avoid MITM by using SSL Pinning") {
+        @ContentAndMedia {
+            We are using **Public Key Pinning** to avoid having any proxy or man in the middle attack for your products
+            
+            @Image(source: ManInTheMiddle-3, alt: "ManInTheMiddle-3")
+        }
+        
+        @Steps {
+            @Step {
+                Use [this -> website](https://www.ssllabs.com/ssltest/analyze.html) to find swapi.dev **hashed public key**
+                
+                @Image(source: ManInTheMiddle-1, alt: "ManInTheMiddle-1")
+            }
+            
+            > Tip: If you are using iOS do these step otherwise; scroll to the android steps:
+            
+            @Step {
+                In `Info.plist` add the following under **NSAppTransportSecurity** dictionary. 
+                
+                @Code(name: "sslpinning-ios", file: sslpinning-ios.xml)
+            }
+            
+            @Step {
+                Close Proxyman or Charles and try to run the app.
+                
+                @Code(name: "sslpinning-ios", file: sslpinning-ios.xml)
+            }
+            
+            > Tip: If you are using Android do this:
+            
+            @Step {
+                In `network_security_config.xml` add the following under **domain-config** dictionary. 
+
+                @Code(name: "sslpinning-android", file: sslpinning-android.xml)
+            }
+            
+            @Step {
+                Close Proxyman or Charles and try to run the app.
+
+                > Warning: Please Revert when you quit Proxyman to make Android Emulators work normally.
+                @Image(source: ManInTheMiddle-2, alt: "ManInTheMiddle-2")
+            }
+        }
+    }
+}

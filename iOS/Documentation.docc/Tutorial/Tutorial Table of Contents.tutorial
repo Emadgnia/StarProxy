@@ -51,6 +51,8 @@
         @Image(source: aqi.medium, alt: "Expert Techniques")
 
         @TutorialReference(tutorial: "doc:AdvancedUsage")
+        
+        @TutorialReference(tutorial: "doc:ManInTheMiddle")
 
     }
 }

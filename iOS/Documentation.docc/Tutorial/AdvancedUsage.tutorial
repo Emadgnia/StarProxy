@@ -8,6 +8,8 @@
     @Section(title: "Save, Import & Export") {
         @ContentAndMedia {
             In this section you learn how to save any request or responses, Import/Export settings 
+            @Image(source: AdvancedUsage-10, alt: "AdvancedUsage-10")
+
         }
         
         @Steps {
@@ -34,6 +36,8 @@
     @Section(title: "Map Local") {
         @ContentAndMedia {
             Get rid of any backend env for your project and map all the responses to your local **JSONs**
+            @Image(source: AdvancedUsage-11, alt: "AdvancedUsage-11")
+
         }
         
         @Steps {
@@ -49,6 +53,8 @@
         @ContentAndMedia {
             Have you ever wanted to test your app in different network connection situations?
             Let's try it together.
+            @Image(source: AdvancedUsage-14, alt: "AdvancedUsage-14")
+
         }
         
         @Steps {
@@ -66,6 +72,8 @@
         @ContentAndMedia {
             Let's have fun, if you want to block all the traffics from your phone, now it's the time.
             Or you can only allow some URLs and ignore the rest ;-).
+            @Image(source: AdvancedUsage-12, alt: "AdvancedUsage-12")
+
         }
         
         @Steps {
@@ -81,6 +89,7 @@
     @Section(title: "Extra Tools") {
         @ContentAndMedia {
             If you have time you can check out the following tools to get your hands dirty.
+            @Image(source: AdvancedUsage-13, alt: "AdvancedUsage-13")
         }
         
         @Steps {
