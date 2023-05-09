@@ -20,8 +20,23 @@
 	<string>1</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+<!--		<key>NSPinnedDomains</key>-->
+<!--		<dict>-->
+<!--			<key>swapi.dev</key>-->
+<!--			<dict>-->
+<!--				<key>NSIncludesSubdomains</key>-->
+<!--				<true/>-->
+<!--				<key>NSPinnedCAIdentities</key>-->
+<!--				<array>-->
+<!--					<dict>-->
+<!--						<key>SPKI-SHA256-BASE64</key>-->
+<!--						<string>jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0=</string>-->
+<!--					</dict>-->
+<!--				</array>-->
+<!--			</dict>-->
+<!--		</dict>-->
 	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
